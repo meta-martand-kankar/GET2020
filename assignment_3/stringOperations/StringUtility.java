@@ -2,6 +2,11 @@ package stringOperations;
 
 import java.util.*;
 
+/**
+ * This class holds the methods to perform operation on string.
+ * @author Martand
+ *
+ */
 public class StringUtility {
 
 	/**
@@ -10,7 +15,7 @@ public class StringUtility {
 	 * @param str2 Second string provided to compare.
 	 * @return result after comparing str1 and str2 , i. e., 1 if strings are equala and else 0;
 	 */
-	public int compareStrings(String str1, String str2){
+	public static int compareStrings(String str1, String str2){
 		int flag = 0;
 		if(str1.length() != str2.length()){
 			flag = 0;
@@ -34,7 +39,7 @@ public class StringUtility {
 	 * @param str string which is to be reversed.
 	 * @return the reverse of String str.
 	 */
-	public String reverseString(String str){
+	public static String reverseString(String str){
 		StringBuilder reversed = new StringBuilder();
 		for(int i = str.length() - 1 ; i >= 0; i--){
 			reversed.append(str.charAt(i));
@@ -49,7 +54,7 @@ public class StringUtility {
 	 * @param str String on which conversion is to be performed.
 	 * @return the result after converting lower cases to upper cases and vice-versa.
 	 */
-	public String changeCase(String str){
+	public static String changeCase(String str){
 		StringBuilder changeCase = new StringBuilder();
 		char ch;
 		for(int i = 0; i < str.length(); i++){
@@ -71,7 +76,7 @@ public class StringUtility {
 	 * @param str on which largest occuring word is to found.
 	 * @return the largest occuring word in index based on last occuring index when words have same length.
 	 */
-	public String largestWord(String str){
+	public static String largestWord(String str){
 		int[] frequency = new int[26];
 		ArrayList<Integer> lastIndex = new ArrayList<Integer>();
 		ArrayList<String> word = new ArrayList<String>();

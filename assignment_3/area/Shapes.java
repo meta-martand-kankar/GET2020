@@ -1,5 +1,10 @@
 package area;
 
+/**
+ * This class calculates the area of different types of objects.
+ * @author Martand
+ *
+ */
 public class Shapes {
 
 	/**
@@ -8,8 +13,15 @@ public class Shapes {
 	 * @param height, height of triangle. 
 	 * @return area of triangle.
 	 */
-	public double areaOfTriangle(double width, double height){
-		return (width*height)/2;
+	public static double areaOfTriangle(double width, double height){
+		double area = -1d;
+		try {
+			area = (width*height)/2;
+		} catch (ArithmeticException e) {
+			System.out.println("Error : Arithmetic Exception Arrived");
+			area = -1d;
+		}
+		return area;
 	}
 
 	/**
@@ -18,8 +30,15 @@ public class Shapes {
 	 * @param height, height of rectangle.
 	 * @return area of rectangle.
 	 */
-	public double areaOfRectangle(double width, double height){
-		return (width*height);
+	public static double areaOfRectangle(double width, double height){
+		double area = -1d;
+		try {
+			area = (width*height);
+		} catch (ArithmeticException e) {
+			System.out.println("Error : Arithmetic Exception Arrived");
+			area = -1d;
+		}
+		return area;
 	}
 
 	/**
@@ -28,8 +47,15 @@ public class Shapes {
 	 * @param height, height of square
 	 * @return area of square.
 	 */	
-	public double areaOfSquare(double width){
-		return (width*width);
+	public static double areaOfSquare(double width){
+		double area = -1d;
+		try {
+			area = (width*width);
+		} catch (ArithmeticException e) {
+			System.out.println("Error : Arithmetic Exception Arrived");
+			area = -1d;
+		}
+		return area;
 	}
 
 	/**
@@ -37,8 +63,14 @@ public class Shapes {
 	 * @param radius, radius of circle.
 	 * @return area of circle.
 	 */
-	public double areaOfCircle(double radius){
-		double pie = 3.14d;
-		return pie*(radius*radius);
+	public static double areaOfCircle(double radius){
+		double pie = 3.14d, area = -1d;
+		try {
+			area = pie*(radius*radius);
+		} catch (ArithmeticException e) {
+			System.out.println("Error : Arithmetic Exception Arrived");
+			area = -1d;
+		}
+		return area;
 	}
 }

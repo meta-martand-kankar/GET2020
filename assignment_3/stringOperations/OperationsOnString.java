@@ -2,11 +2,14 @@ package stringOperations;
 
 import java.util.*;
 
+/**
+ * This class uses StringUtility and also uses its method in accordance of end user.
+ * @author Martand
+ *
+ */
 public class OperationsOnString {
 
 	public static void main(String[] args){
-		StringUtility strObject = new StringUtility();
-
 		String str_1 = new String();
 		String str_2 = new String();
 
@@ -25,7 +28,7 @@ public class OperationsOnString {
 					str_1 = readInp.nextLine();
 					System.out.println("Enter 2nd String for compare :  ");
 					str_2 = readInp.nextLine();
-					int result = strObject.compareStrings(str_1, str_2);
+					int result = StringUtility.compareStrings(str_1, str_2);
 					if(result == 1){
 						System.out.println("The strings provided are equal.");
 					}
@@ -37,19 +40,19 @@ public class OperationsOnString {
 				case 2:
 					System.out.println("Enter 1st String for compare :  ");
 					str_1 = readInp.nextLine();
-					System.out.println("Reversed string is : " + strObject.reverseString(str_1));
+					System.out.println("Reversed string is : " + StringUtility.reverseString(str_1));
 					break;
 
 				case 3:
 					System.out.println("Enter 1st String for compare :  ");
 					str_1 = readInp.nextLine();
-					System.out.println("After changing case : " + strObject.changeCase(str_1));
+					System.out.println("After changing case : " + StringUtility.changeCase(str_1));
 					break;
 
 				case 4:
 					System.out.println("Enter 1st String for compare :  ");
 					str_1 = readInp.nextLine();
-					System.out.println("Largest word last index : " + strObject.largestWord(str_1));
+					System.out.println("Largest word last index : " + StringUtility.largestWord(str_1));
 					break;
 
 				case 5:

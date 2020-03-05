@@ -1,0 +1,283 @@
+*,
+body,
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('../images/bodybg.png');
+}
+
+.container {
+    margin-bottom: 20%;
+}
+
+.container>img {
+    /* background: url('images/homebg.png') no-repeat fixed center; */
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+}
+
+nav {
+    z-index: 2;
+    position: relative;
+    height: 50px;
+}
+
+.navList {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.navList>li {
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    color: white;
+}
+
+.row {
+    margin: 0;
+}
+
+.col-4 {
+    text-align: center;
+    width: 33%;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.logoHead {
+    margin-top: 10px;
+}
+
+.row_insideContainer {
+    position: relative;
+    z-index: 2;
+    margin-left: 10%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.col-6-m {
+    color: white;
+}
+
+.col-6-m>button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.downloadButton {
+    background-color: brown;
+    border-style: none;
+    color: white;
+}
+
+.featuresButton {
+    background-color: darkblue;
+    border-style: none;
+    color: white;
+}
+
+.weatherHeading {
+    margin: 30px;
+    margin-top: 0;
+    margin-left: 0;
+    font-size: 64px;
+}
+
+.screenshot1 {
+    width: 70%;
+}
+
+.perfectFeatures {
+    text-align: center;
+    margin-top: 8%;
+}
+
+.perfectFeaturesHeading {
+    color: blue;
+    margin: 0;
+}
+
+.perfectFeaturesSubtext {
+    color: grey;
+    margin: 0;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10%;
+}
+
+.features>* {
+    width: 33%;
+}
+
+.divRight,
+.divCenter,
+.divLeft {
+    width: 50%;
+}
+
+.divRight {
+    float: right;
+}
+
+.divCenter {
+    margin-left: 30%;
+}
+
+.divLeft {
+    float: left;
+}
+
+.grey {
+    color: grey;
+}
+
+.carousel {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.carouselItem {
+    margin-left: 25%;
+    width: 50%;
+}
+
+.carouselItem>img {
+    width: 100%;
+}
+
+.weatherScreenShot {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10%;
+}
+
+.column1Subdiv {
+    width: 70%;
+    float: right;
+}
+
+.column1Subdiv>img {
+    width: 100%;
+}
+
+.column2Subdiv {
+    width: 60%;
+    margin-top: 12%;
+}
+
+.column2Subdiv>h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.righty {
+    float: right;
+}
+
+.lefty {
+    float: left;
+}
+
+.footerLowerdiv {
+    background-color: darkslategray;
+}
+
+.footerText {
+    width: 80%;
+    border-top: lightslategrey solid 1px;
+    margin-left: 10%;
+    text-align: center;
+    padding-bottom: 1%;
+}
+
+.footerText>p {
+    margin-top: 15px;
+}
+
+.footerUpperdiv {
+    display: flex;
+    justify-content: space-around;
+    background-color: blue;
+    padding-top: 5%;
+    padding-bottom: 0;
+}
+
+.upperSubdiv2Img {
+    width: 80%;
+    margin-bottom: -5px;
+}
+
+.upperSubdiv2Img>img {
+    width: 100%;
+}
+
+.footerUpperdivText {
+    width: 50%;
+    margin-left: 18%;
+}
+
+.footerUpperdivText>* {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.white {
+    color: wheat;
+}
+
+.subtextReview {
+    font-size: 12px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.reviewSubdiv1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.reviewSubdiv1>* {
+    width: 25%;
+    float: right;
+}
+
+.reviewSubdiv2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.reviewSubdiv2>* {
+    width: 25%;
+    float: left;
+}
+
+.review1,
+.review3 {
+    margin-left: 10%;
+}
+
+.review2,
+.review4 {
+    margin-right: 10%;
+}
+
+.blue {
+    color: blue;
+}
+
+.reviews {
+    margin-top: 3%;
+    margin-bottom: 8%;
+}

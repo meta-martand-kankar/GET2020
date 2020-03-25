@@ -1,0 +1,19 @@
+div button {
+    float: right;
+    background-color: lightcyan;
+    padding: 3px 3px;
+}
+
+#titleDiv {
+    padding: 2%;
+    text-align: center;
+}
+
+#titleDiv span {
+    font-size: 40px;
+}
+
+#mainDiv {
+    padding: 5%;
+    margin: auto;
+}
